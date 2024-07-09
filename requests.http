@@ -1,0 +1,21 @@
+POST http://localhost:3333/trips
+Content-Type: application/json
+
+{
+  "destination": "Porto Alegre",
+  "starts_at": "2024-07-09 21:33:25",
+  "ends_at": "2024-07-09 22:38:26",
+  "owner_name": "Bryan Soares",
+  "owner_email": "zlucason1@gmail.com",
+  "emails_to_invite": ["teste@gmail.com", "teste2@gmail.com"]
+}   
+###
+
+POST http://localhost:3000/api/user/login
+Content-Type: application/json
+
+{
+    "email": "bryan.soares@bisga.com",
+    "password": "aaaaaaA1!"
+}
+###%    
