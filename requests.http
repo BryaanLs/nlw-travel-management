@@ -2,20 +2,20 @@ POST http://localhost:3333/trips
 Content-Type: application/json
 
 {
-  "destination": "Porto Alegre",
-  "starts_at": "2024-07-09 21:33:25",
-  "ends_at": "2024-07-09 22:38:26",
+  "destination": "Sorocaba",
+  "starts_at": "2024-07-09 23:33:25",
+  "ends_at": "2024-07-10 22:38:26",
   "owner_name": "Bryan Soares",
   "owner_email": "zlucason1@gmail.com",
   "emails_to_invite": ["teste@gmail.com", "teste2@gmail.com"]
 }   
 ###
 
-POST http://localhost:3000/api/user/login
+GET http://localhost:3333/trips/c41b14d2-fa71-419b-9249-7968adbc6d02/confirm
 Content-Type: application/json
 
-{
-    "email": "bryan.soares@bisga.com",
-    "password": "aaaaaaA1!"
-}
-###%    
+###
+GET http://localhost:3333/participants/9c1c6fcb-fb62-4eec-8078-af5e29e58e04/confirm
+Content-Type: application/json
+
+###
